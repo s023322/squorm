@@ -1,29 +1,32 @@
-"headers": [
-    {
-        "source": "/(.*\\.wasm\\.unityweb)",
-        "headers": [
-            {
-                "key": "Content-Type",
-                "value": "application/wasm"
-            }
-        ]
-    },
-    {
-        "source": "/(.*\\.br)",
-        "headers": [
-            {
-                "key": "Content-Encoding",
-                "value": "br"
-            }
-        ]
-    },
-    {
-        "source": "/(.*\\.wasm\\.br)",
-        "headers": [
-            {
-                "key": "Content-Type",
-                "value": "application/wasm"
-            }
-        ]
-    }
-]
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "headers": [
+        {
+            "source": "/(.*\\.wasm\\.unityweb)",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/wasm"
+                }
+            ]
+        },
+        {
+            "source": "/(.*\\.br)",
+            "headers": [
+                {
+                    "key": "Content-Encoding",
+                    "value": "br"
+                }
+            ]
+        },
+        {
+            "source": "/(.*\\.wasm\\.br)",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "application/wasm"
+                }
+            ]
+        }
+    ]
+}
